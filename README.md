@@ -15,6 +15,8 @@
 ![](pics/wechat.png)
 
 
+[全套思维导图](/mind-map.md)
+
 ## 一、基础篇
 
 ### 面向对象
@@ -83,7 +85,7 @@ replaceFirst、replaceAll、replace区别、
 
 [字符串拼接的几种方式和区别](/basics/java-basic/string-concat.md)
 
-String.valueOf和Integer.toString的区别、
+[String.valueOf和Integer.toString的区别](/basics/java-basic/value-of-vs-to-string.md)
 
 [switch对String的支持](/basics/java-basic/switch-string.md)
 
@@ -95,69 +97,89 @@ transient、instanceof、volatile、synchronized、final、static、const 原理
 
 #### 集合类
 
-常用集合类的使用、ArrayList和LinkedList和Vector的区别 、[SynchronizedList和Vector的区别](/basics/java-basic/synchronizedlist-vector.md)、HashMap、HashTable、ConcurrentHashMap区别、
+常用集合类的使用
 
-Set和List区别？Set如何保证元素不重复？
+[ArrayList和LinkedList和Vector的区别](/basics/java-basic/arraylist-vs-linkedlist-vs-vector.md) 
 
-[Java 8中stream相关用法](/basics/java-basic/stream.md)、apache集合处理工具类的使用、不同版本的JDK中HashMap的实现的区别以及原因
+[SynchronizedList和Vector的区别](/basics/java-basic/synchronizedlist-vector.md)、
 
-Collection和Collections区别
+[HashMap、HashTable、ConcurrentHashMap区别](/basics/java-basic/HashMap-HashTable-ConcurrentHashMap.md)
 
-Arrays.asList获得的List使用时需要注意什么
+[Set和List区别？](/basics/java-basic/set-vs-list.md)
 
-Enumeration和Iterator区别
+[Set如何保证元素不重复?](/basics/java-basic/set-repetition.md)
+
+[Java 8中stream相关用法](/basics/java-basic/stream.md)、
+
+apache集合处理工具类的使用、
+
+不同版本的JDK中HashMap的实现的区别以及原因
+
+[Collection和Collections区别](/basics/java-basic/Collection-vs-Collections.md)
+
+[Arrays.asList获得的List使用时需要注意什么](/basics/java-basic/Arrays-asList.md)
+
+[Enumeration和Iterator区别](/basics/java-basic/Enumeration-vs-Iterator.md)
 
 [fail-fast 和 fail-safe](/basics/java-basic/fail-fast-vs-fail-safe.md)
 
-CopyOnWriteArrayList、ConcurrentSkipListMap
+[CopyOnWriteArrayList](/basics/java-basic/CopyOnWriteArrayList.md)
+
+[ConcurrentSkipListMap](/basics/java-basic/ConcurrentSkipListMap.md)
 
 #### 枚举
 
-枚举的用法、枚举的实现、枚举与单例、Enum类
+[枚举的用法](/basics/java-basic/enum-usage.md)
 
-Java枚举如何比较
+[枚举的实现](/basics/java-basic/enum-impl.md)
 
-switch对枚举的支持
+[枚举与单例](/basics/java-basic/enum-singleton.md)、Enum类
+
+[Java枚举如何比较](/basics/java-basic/enum-compare.md)
+
+[switch对枚举的支持](/basics/java-basic/enum-switch.md)
 
 [枚举的序列化如何实现](/basics/java-basic/enum-serializable.md)
 
-枚举的线程安全性问题
+[枚举的线程安全性问题](/basics/java-basic/enum-thread-safe.md)
 
 #### IO
 
-字符流、字节流、输入流、输出流、
+[字符流、字节流](/basics/java-basic/byte-stream-vs-character-stream.md)、[输入流、输出流](/basics/java-basic/input-stream-vs-output-stream.md)
 
-同步、异步、阻塞、非阻塞、Linux 5种IO模型
+[同步、异步](/basics/java-basic/synchronized-vs-asynchronization.md)、[阻塞、非阻塞](/basics/java-basic/block-vs-non-blocking.md)、[Linux 5种IO模型](/basics/java-basic/linux-io.md)
 
-BIO、NIO和AIO的区别、三种IO的用法与原理、netty
+[BIO、NIO和AIO的区别、三种IO的用法与原理](/basics/java-basic/bio-vs-nio-vs-aio.md)、netty
 
 #### Java反射与javassist
 
-反射与工厂模式、 反射有什么作用
+[反射](/basics/java-basic/reflection.md)与工厂模式、 [反射有什么作用](/basics/java-basic/usage-of-reflection.md)
 
-Class类
+[Class类](/basics/java-basic/Class.md)
 
 `java.lang.reflect.*`
 
 #### 动态代理
 
-静态代理、动态代理
+[静态代理](/basics/java-basic/static-proxy.md)、[动态代理](/basics/java-basic/dynamic-proxy.md)
 
-动态代理和反射的关系
+[动态代理和反射的关系](/basics/java-basic/dynamic-proxy-vs-reflection.md)
 
-动态代理的几种实现方式
+[动态代理的几种实现方式](/basics/java-basic/dynamic-proxy-implementation.md)
 
-AOP
+[AOP](/basics/java-basic/aop-vs-proxy.md)
 
 #### 序列化
 
-什么是序列化与反序列化、为什么序列化、序列化底层原理、序列化与单例模式、protobuf、为什么说序列化并不安全
+[什么是序列化与反序列化](/basics/java-basic/serialize.md)、为什么序列化、[序列化底层原理](/basics/java-basic/serialize-principle.md)、[序列化与单例模式](/basics/java-basic/serialize-singleton.md)、protobuf、为什么说序列化并不安全
 
 #### 注解
 
-元注解、自定义注解、Java中常用注解使用、注解与反射的结合
+[元注解](/basics/java-basic/meta-annotation.md)、[自定义注解](/basics/java-basic/custom-annotation.md)、Java中常用注解使用、注解与反射的结合
 
-Spring常用注解
+[如何自定义一个注解？](/basics/java-basic/create-annotation.md)
+
+[Spring常用注解](/basics/java-basic/annotation-in-spring.md)
 
 #### JMS
 
@@ -169,13 +191,13 @@ Spring常用注解
 
 #### 泛型
 
-泛型与继承、类型擦除、泛型中K T V E ？ [object等的含义](/basics/java-basic/k-t-v-e.md)、泛型各种用法
+泛型与继承、类型擦除、[泛型中K T V E ？ object等的含义](/basics/java-basic/k-t-v-e.md)、泛型各种用法
 
 限定通配符和非限定通配符、上下界限定符extends 和 super
 
-List<Object>和原始类型List之间的区别? 
+[List<Object>和原始类型List之间的区别?](/basics/java-basic/genericity-list.md)
 
-List<?>和List<Object>之间的区别是什么?
+[List<?>和List<Object>之间的区别是什么?](/basics/java-basic/genericity-list-wildcard.md)
 
 #### 单元测试
 
@@ -191,9 +213,9 @@ junit、mock、mockito、内存数据库（h2）
 
 #### API&SPI
 
-API、API和SPI的关系和区别
+API、[API和SPI的关系和区别](/basics/java-basic/api-vs-spi.md)
 
-如何定义SPI、SPI的实现原理
+[如何定义SPI](/basics/java-basic/create-spi.md)、[SPI的实现原理](/basics/java-basic/spi-principle.md)
 
 #### 异常
 
@@ -211,7 +233,7 @@ finally和return的执行顺序
 
 格林威治时间、CET,UTC,GMT,CST几种常见时间的含义和关系
 
-SimpleDateFormat的线程安全性问题
+[SimpleDateFormat的线程安全性问题](/basics/java-basic/simpledateformat-thread-safe.md)
 
 Java 8中的时间处理
 
@@ -231,9 +253,9 @@ URL编解码、Big Endian和Little Endian
 
 #### 语法糖
 
-Java中语法糖原理、解语法糖
+[Java中语法糖原理、解语法糖](/basics/java-basic/syntactic-sugar.md)
 
-语法糖：switch 支持 String 与枚举、泛型、自动装箱与拆箱、方法变长参数、枚举、内部类、条件编译、 断言、数值字面量、for-each、try-with-resource、Lambda表达式、
+[语法糖：switch 支持 String 与枚举、泛型、自动装箱与拆箱、方法变长参数、枚举、内部类、条件编译、 断言、数值字面量、for-each、try-with-resource、Lambda表达式](/basics/java-basic/syntactic-sugar.md)
 
 ### 阅读源代码
 
@@ -287,7 +309,7 @@ synchronized和原子性、可见性和有序性之间的关系
 
 #### volatile
 
-happens-before、内存屏障、编译器指令重排和CPU指令重
+happens-before、内存屏障、编译器指令重排和CPU指令重排
 
 volatile的实现原理
 
@@ -323,7 +345,7 @@ class文件格式、运行时数据区：堆、栈、方法区、直接内存、
 
 堆和栈区别
 
-Java中的对象一定在堆上分配吗？
+[Java中的对象一定在堆上分配吗？](/basics/jvm/stack-alloc.md)
 
 #### Java内存模型
 
